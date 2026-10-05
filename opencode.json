@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/big-pickle",
+  "default_agent": "leader",
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "./init.sh*": "allow",
+      "python3 -m unittest*": "allow",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow"
+    },
+    "doom_loop": "ask",
+    "external_directory": "ask"
+  }
+}
